@@ -21,11 +21,11 @@
 | **Operating System** | **macOS 13.0 (Ventura)** or later | **macOS 14 (Sonoma)** / **macOS 15 (Sequoia)** |
 | **Processor / Architecture** | **Apple Silicon (M1, M2, M3, M4)** *(native `arm64` binary)* | Apple Silicon (M1 Pro/Max/Ultra or newer) |
 | **Memory (RAM)** | **4 GB RAM** | **8 GB RAM** or more |
-| **Disk Space** | **~25 MB** available disk space *(DMG installer is ~2.7 MB)* | Additional space for your notes and embedded images |
+| **Disk Space** | **~25 MB** available disk space *(DMG installer is ~2.6 MB)* | Additional space for your notes and embedded images |
 | **Display** | Minimum resolution of **1280 × 800** | Retina / 4K / ProMotion (120 Hz) |
 
 > [!NOTE]
-> **Why macOS 13.0+?**  
+> **Why macOS 13.0+?**
 > Quillfolio leverages modern macOS frameworks including multi-column `NavigationSplitView`, native AppKit graphics contexts, vibrancy materials, and hardware-accelerated CoreGraphics vector rendering.
 
 ### Supported Input Hardware
@@ -36,7 +36,10 @@
 2. **Graphics Tablets & Digital Pens**:
    - Hardware pressure sensitivity (`NSEvent.pressure`) with configurable non-linear response curves (0.5x – 2.5x).
    - Zero-lag support for **Wacom**, **Huion**, **XP-Pen**, **Gaomon**, **Veikk**, and other USB/Bluetooth drawing tablets.
-   - Dedicated support for **tablet ExpressKeys** and pen rocker buttons.
+   - Dedicated support for **tablet ExpressKeys** and pen rocker buttons:
+     - Zoom In: `Cmd + =` / button 3
+     - Zoom Out: `Cmd + -` / button 4
+     - Undo / Redo: `Cmd + Z` / `Cmd + Shift + Z` (and `Ctrl + Z` / `Ctrl + Y`)
 3. **iPad with Apple Pencil (Apple Sidecar)**:
    - Wirelessly use an iPad as an external drawing screen with full tilt and pressure fidelity via Apple Sidecar.
 
@@ -111,7 +114,7 @@ Accessible via the sidebar, toolbar gear icon, or system menu (`⌘,`):
 ## 🚀 Installation & Running
 
 ### Option 1: Install via DMG (Recommended)
-1. Download **[`Quillfolio.dmg`](Quillfolio.dmg)** (approx. **2.7 MB**).
+1. Download **[`Quillfolio.dmg`](Quillfolio.dmg)** (approx. **2.6 MB**).
 2. Double-click the `.dmg` file to mount it.
 3. Drag **Quillfolio** into your **Applications** folder.
 4. Launch it from Launchpad, Spotlight (`⌘ + Space`), or the Applications folder.
@@ -121,7 +124,7 @@ Requirements: macOS 13.0+, Xcode Command Line Tools (`xcode-select --install`).
 
 ```bash
 # Clone the repository
-git clone https://github.com/B4rtiX/Quillfolio.git
+git clone https://github.com/YOUR_USERNAME/Quillfolio.git
 cd Quillfolio
 
 # Compile the native macOS application
@@ -157,7 +160,7 @@ swiftc -parse-as-library test_deep_suite.swift \
 
 ```
 Quillfolio/
-├── Quillfolio.dmg              # Ready-to-install standalone Apple Disk Image (~2.7 MB)
+├── Quillfolio.dmg              # Ready-to-install standalone Apple Disk Image (~2.6 MB)
 ├── Quillfolio.app              # Compiled native macOS application bundle
 ├── build.sh                    # Automated release compiler and installer script
 ├── create_dmg.sh               # Standalone DMG packaging script
