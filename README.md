@@ -18,8 +18,8 @@
 
 | Specification | Minimum Requirement | Recommended |
 | :--- | :--- | :--- |
-| **Operating System** | **macOS 13.0 (Ventura)** or later | **macOS 14 (Sonoma)** / **macOS 15 (Sequoia)** |
-| **Processor / Architecture** | **Apple Silicon (M1, M2, M3, M4)** *(native `arm64` binary)* | Apple Silicon (M1 Pro/Max/Ultra or newer) |
+| **Operating System** | **macOS 13.0 (Ventura)** or later | **macOS 14 (Sonoma)** / **macOS 15 (Sequoia)** or later|
+| **Processor / Architecture** | **Apple Silicon (M1, M2, M3, M4 or newer)** *(native `arm64` binary)* | Apple Silicon (M1 Pro/Max/Ultra or newer) |
 | **Memory (RAM)** | **4 GB RAM** | **8 GB RAM** or more |
 | **Disk Space** | **~25 MB** available disk space *(DMG installer is ~2.6 MB)* | Additional space for your notes and embedded images |
 | **Display** | Minimum resolution of **1280 × 800** | Retina / 4K / ProMotion (120 Hz) |
